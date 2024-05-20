@@ -1,0 +1,21 @@
+pipeline{
+    agent { label 'nodo-windows' }
+
+    stages {
+        stage ('Configurar JDK'){
+            steps{
+                bat 'set JAVA_HOME=C:\\Program Files\\Java\\jdk-20'
+            }
+        }
+        stage ('Compilacion') {
+            steps{
+                bat 'mvn clean compile'
+            }
+        }
+        stage ('Test Funcional Cucumber/Selenium') {
+            steps{
+                bat 'mvn clean install'
+            }
+        }
+    }
+}

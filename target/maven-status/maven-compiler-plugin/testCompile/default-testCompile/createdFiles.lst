@@ -1,0 +1,10 @@
+steps/enteOneTouch/entelOnetouchSteps.class
+pages/SauceDemo/InventoryPage.class
+steps/Hooks.class
+steps/SauceDemoWeb/LoginDefinition.class
+pages/entelOnetouch/entelOnetouchActions.class
+pages/SauceDemo/ItemPage.class
+pages/WebBasePage.class
+pages/entelOnetouch/entelOnetouchLocators.class
+runner/RunnerTest.class
+pages/SauceDemo/LoginPage.class
